@@ -1,0 +1,19 @@
+.order {
+  padding: 130px 0;
+}
+
+.order-inner {
+  @include inner;
+}
+
+.order-title {
+  @include section-title;
+  margin-bottom: 37px;
+}
+
+.order-text {
+  margin-bottom: 90px;
+  color: $color-dark;
+  font-size: 28px;
+  line-height: 38px;
+}

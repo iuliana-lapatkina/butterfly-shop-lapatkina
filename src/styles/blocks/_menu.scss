@@ -1,0 +1,26 @@
+.menu {
+  @media (max-width: $mobile-max) {
+    display: none;
+  }
+}
+
+.menu-item {
+  display: inline-block;
+  padding: 25px 33px;
+  font-family: $font;
+  text-decoration: none;
+  text-transform: uppercase;
+  list-style: none;
+
+  &:hover {
+    background-color: $color-accent;
+  }
+
+  a {
+    color: $color-light;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    text-decoration: none;
+  }
+}

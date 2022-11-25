@@ -1,0 +1,24 @@
+@mixin inner {
+  max-width: 1278px + $gap; // компенсация добавленного ниже паддинга
+  padding: 0 $gap-half; // добавили отступ на тач-устройствах слева и справа от границы экрана
+  margin: 0 auto;
+  border: 1px solid red;
+}
+
+@mixin section-title {
+  text-align: center;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 87px;
+  color: $color-dark;
+
+  @media (max-width: $tablet-max) {
+    font-size: 60px;
+    line-height: 82px;
+  }
+
+  @media (max-width: $mobile-max) {
+    font-size: 36px;
+    line-height: 49px;
+  }
+}

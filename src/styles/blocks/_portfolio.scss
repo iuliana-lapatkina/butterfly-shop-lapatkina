@@ -1,0 +1,23 @@
+.portfolio {
+  padding: 130px 0;
+  text-align: center;
+}
+
+.portfolio-inner {
+  @include inner;
+}
+
+.portfolio-list {
+  margin-bottom: 120px;
+}
+
+.portfolio-title {
+  @include section-title;
+  margin-bottom: 97px;
+}
+
+.portfolio-item {
+  flex-basis: 25%;
+  padding: $gap-half;
+}
+
