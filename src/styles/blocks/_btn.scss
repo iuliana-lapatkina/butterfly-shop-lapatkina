@@ -1,6 +1,5 @@
 .btn {
   display: inline-block;
-  padding: 30px 0;
   text-align: center;
   background-color: $color-accent;
   color: inherit;
@@ -14,11 +13,11 @@
   cursor: pointer;
 
   .promo-inner & {
-    padding: 30px 72px;
+    padding: 30px 44px;
   }
 
   .portfolio-inner & {
-    padding: 30px 112px;
+    padding: 30px 104px;
   }
 }
 
