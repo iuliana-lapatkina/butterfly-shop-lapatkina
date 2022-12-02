@@ -6,6 +6,7 @@
     <title>Мой первый проект</title>
     <link rel="stylesheet" href="style/style.css">
 </head>
+
 <body>
   <header class="header">
     <div class="header-inner">
@@ -23,6 +24,7 @@
       </div>
     </div>
   </header>
+
   <main>
     <section class="promo">
       <div class="promo-inner">
@@ -45,7 +47,7 @@
           <li class="portfolio-item">
             <div class="portfolio-card">
               <img src="images/portfolio-image-2.jpg" alt="Галстуки-бабочки на столе">
-              <p class="portfolio-item-desc">Бабочка растакая</p>
+              <p class="portfolio-item-desc">Еще одна бабочка</p>
             </div>
           </li>
           <li class="portfolio-item">
@@ -70,22 +72,25 @@
         <p class="order-text">Заполните форму - наш мастер свяжется с вами,
           согласует удобное время для встречи. На встрече он снимет мерки и
           поможет определиться с тканью.</p>
-        <form action="" class="form">
-          <div class="form-field form-field-half">
-            <label for="name" class="form-label">Имя</label>
-            <input name="name" id="name" type="text" class="form-input" placeholder="Введите фамилию">
-          </div>
-          <div class="form-field form-field-half">
-            <label for="phone" class="form-label">Телефон</label>
-            <input name="phone" id="phone" type="text" class="form-input">
-          </div>
-          <div class="form-field">
-            <button type="submit" class="btn btn-form">Заказать</button>
-          </div>
-        </form>
+
+          <form class="form" action="mail.php" method="POST" >
+            <div class="form-field form-field-box" >
+              <label for="name" class="form-label">Ваше имя</label>
+              <input id="name" name="name" type="text" class="form-input">
+            </div>
+            <div class="form-field form-field-box" >
+              <label for="phone" class="form-label">Телефон</label>
+              <input id="phone" name="phone" type="tel" class="form-input">
+            </div>
+            <div class="form-field">
+              <button type="submit" class="btn btn-form">Заказать</button>
+            </div>
+           </form>
+
       </div>
     </section>
   </main>
+
   <footer class="footer">
     <div class="footer-inner">
       <div class="footer-wrap">

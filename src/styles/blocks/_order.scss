@@ -1,5 +1,15 @@
 .order {
   padding: 130px 0;
+  background-color: rgba($color-dark, 0.1);
+
+  @media (max-width: $tablet-max) {
+    padding: 120px 0;
+  }
+
+  @media (max-width: $mobile-max) {
+    padding: 90px 0;
+  }
+
 }
 
 .order-inner {
@@ -16,4 +26,11 @@
   color: $color-dark;
   font-size: 28px;
   line-height: 38px;
+  text-align: center;
+
+  @media (max-width: $mobile-max) {
+    margin-bottom: 60px;
+    font-size: 18px;
+    line-height: 25px;
+  }
 }
