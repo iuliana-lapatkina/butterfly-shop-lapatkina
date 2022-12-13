@@ -1,6 +1,10 @@
 .social {
   display: flex;
   list-style: none;
+
+  @media (max-width: $mobile-max) {
+    justify-content: center;
+  }
 }
 
 .social-item {

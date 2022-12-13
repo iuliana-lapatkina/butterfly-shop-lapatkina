@@ -1,6 +1,14 @@
 .footer {
   padding: 31px 0;
   background-color: $color-dark;
+
+  @media (max-width: $tablet-max) {
+    padding: 35px 0;
+  }
+
+  @media (max-width: $mobile-max) {
+    padding: 30px 0;
+  }
 }
 
 .footer-inner {
@@ -12,8 +20,20 @@
   justify-content: end;
   align-items: center;
 
+  @media (max-width: $mobile-max) {
+    display: block;
+    text-align: center;
+  }
+
   .logo {
     margin: 0 auto 0 0;
+
+    @media (max-width: $mobile-max) {
+      display: block;
+      margin-bottom: 30px;
+      font-size: 36px;
+      line-height: 49px;
+    }
   }
 }
 
@@ -24,4 +44,10 @@
   line-height: 38px;
   text-decoration: none;
   color: inherit;
+
+  @media (max-width: $mobile-max) {
+    display: block;
+    margin-right: inherit;
+    margin-bottom: 15px;
+  }
 }

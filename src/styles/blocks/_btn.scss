@@ -12,12 +12,26 @@
   border: none;
   cursor: pointer;
 
+  @media (max-width: $mobile-max) {
+    font-size: 24px;
+    line-height: 33px;
+  }
+
   .promo-inner & {
     padding: 23.5px 69px;
+
+    @media (max-width: $mobile-max) {
+      padding: 20px 35.5px;
+    }
+
   }
 
   .portfolio-inner & {
     padding: 23.5px 121px;
+
+    @media (max-width: $mobile-max) {
+      padding: 20px 66px;
+    }
   }
 }
 
